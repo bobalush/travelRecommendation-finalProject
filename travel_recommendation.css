@@ -104,3 +104,74 @@ ul li a:hover {
     background-color: #004d40;
 }
  
+/* HERO SECTION */
+.hero-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex; /* enables flexbox for easy alignment of content inside the section */
+    align-items: center; /* vertically aligns the content in the center of the section */
+    justify-content: flex-start;
+    color: white;
+    position: relative; 
+    padding: 50px;
+}
+
+.hero-content {
+    max-width: 500px; /* this ensures the content doe not stretch too wide on larger screens, making it more readable */
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #004d40;
+}
+
+/* social media Icons */
+
+.social-icons {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00796b;
+}
+
+.social-icons a.youtube:hover {
+    color: red;
+}
