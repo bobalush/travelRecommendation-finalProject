@@ -57,6 +57,12 @@ ul li a:hover {
     text-decoration: underline;
 }
 
+.nav-icons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 .search-bar {
     display: flex;
     align-items: center;
@@ -114,6 +120,14 @@ ul li a:hover {
     color: white;
     position: relative; 
     padding: 50px;
+}
+
+/* Task 8: NEW FLEX WRAPPER */
+.hero-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .hero-content {
@@ -175,3 +189,276 @@ ul li a:hover {
 .social-icons a.youtube:hover {
     color: red;
 }
+
+/* Team section for about us page */
+.about-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.about-content {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.about-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.about-description {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Team section */
+.social-team-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+.team-section {
+   flex-grow: 1;
+}
+
+.team-header-container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.team-header {
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-right: 2px solid white;
+}
+
+
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: rgba(35, 33, 33, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.role {
+    display: inline-block;
+    background: #3a6073;
+    color: white;
+    padding: 5px  15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Contact us Styles */
+
+.contactus-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.contact-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+.contact-container input[type="text"]::placeholder,
+.contact-container input[type="email"]::placeholder,
+.contact-container textarea::placeholder {
+  color: #ddd;
+}
+
+.contact-container input[type="submit"] {
+    background-color: #008080;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-container input[type="submit"]:hover {
+    background-color: #006666;
+}
+
+
+
+/* Task 6 */
+
+/* .recommendation-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+  } */
+
+  /* Task8: Recommendation result, gray out the one in task 6 above */
+  .recommendation-results {
+    flex: 1;
+    display: none;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  max-height: 500px;
+  overflow-y: auto;
+  color: black;
+  }
+
+  /* .recommendation-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .recommendation-card img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+#results {
+    display: gid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+@media (max-width: 760px){
+    #results {
+        grid-template-columns: 1fr;;
+    }
+}
+
+ */
+
+ /* Each card */
+.recommendation-card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    text-align: left;
+  }
+  
+  .recommendation-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .recommendation-card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .recommendation-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .recommendation-card button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .recommendation-card button:hover {
+    background-color: #004d40;
+  }
