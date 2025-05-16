@@ -38,6 +38,11 @@ fetch('travel_recommendation_api.json')
         }
 
         //Match countries
+        else if (input.includes("country")) {
+            travelData.countries.forEach(country => {
+                results.push(...country.cities);
+            });
+        }
         else {
             travelData.countries.forEach(country => {
                 if (country.name.toLowerCase().includes(input)) {
